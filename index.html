@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Survey on Transportation Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #eafaf1;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #d5f5e3;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        select, input[type="radio"] {
+            margin: 5px 0;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .follow-up {
+            margin-top: 20px;
+            background-color: #eef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-section">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/200px-IIT_Kharagpur_Logo.svg.png" alt="Logo" style="width: 100px; height: 100px;">
+        <h1>Expert Survey on Transportation Technology Trends and Research Priorities</h1>
+        <h3>Greetings! Experts</h3>
+        <p>We at IIT Kharagpur invite you to participate in this survey aimed at exploring the role of emerging transportation technologies in creating inclusive and equitable mobility systems across India. This study is part of an academic initiative to gather expert insights into the current and future transportation technologies, their impact on social inclusivity, universal accessibility, and economic empowerment, and to identify priority areas for research and development.</p>
+        <p>Your responses will remain anonymous and will be used solely for research purposes. As a professional with experience in this domain, your contributions are vital to shaping future policies and innovations. Thank you for your time and expertise!</p>
+    </div>
+
+    <form id="surveyForm">
+        <!-- Demographics Section -->
+        <div class="section">
+            <h2>Demographics</h2>
+   </div>
+            <p><strong>Gender:</strong></p>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+            <label><input type="radio" name="gender" value="prefer-not-to-say" required> Prefer not to say</label>
+
+            <p><strong>Professional Affiliation:</strong></p>
+            <label><input type="radio" name="affiliation" value="Professor" required> Professor</label>
+            <label><input type="radio" name="affiliation" value="Government Official" required> Government Official</label>
+            <label><input type="radio" name="affiliation" value="Industry Professional" required> Industry Professional</label>
+            <label><input type="radio" name="affiliation" value="Think Tanks" required> Think Tanks</label>
+            <label><input type="radio" name="affiliation" value="Academia" required> Academia</label>
+
+            <p><strong>Years of Experience:</strong></p>
+            <label><input type="radio" name="experience" value="Less than 5" required> Less than 5</label>
+            <label><input type="radio" name="experience" value="5-10" required> 5-10</label>
+            <label><input type="radio" name="experience" value="10-20" required> 10-20</label>
+            <label><input type="radio" name="experience" value="More than 20" required> More than 20</label>
+
+            <p><strong>Area of Expertise:</strong></p>
+            <label><input type="radio" name="expertise" value="Transport Planning" required> Transport Planning</label>
+            <label><input type="radio" name="expertise" value="Urban Planning" required> Urban Planning</label>
+            <label><input type="radio" name="expertise" value="Technology and Innovation" required> Technology and Innovation</label>
+            <label><input type="radio" name="expertise" value="Policy" required> Policy</label>
+            <label><input type="radio" name="expertise" value="Other" required> Other</label>
+        </div>
+
+        <!-- Social Inclusivity Impact Section -->
+        <div class="section">
+            <h2>Social, Economic, and Accessibility Impact of Current Technologies</h2>
+            </div>
+            <style>
+        .rating-grid {
+            display: grid;
+            grid-template-columns: auto repeat(5, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        .grid-header {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background: #bbe8f7;
+        }
+        .grid-item {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+        }
+        .grid-item:nth-child(6n+1) {
+            font-weight: bold;
+            background: #e6f7fd;
+        }
+        .grid-item input[type="radio"] {
+            margin: 0 auto;
+        }
+    </style>
+        <!-- Question 1 -->
+        <p>Rate the following technologies on their potential to improve Social Inclusivity (1 = Very Low, 5 = Very High).</p>
+        <p>Social inclusivity in transportation refers to ensuring equitable access to transport services, enabling all individuals, particularly low-income and zero-car households, to participate in daily activities without barriers, thereby reducing risks of social exclusion and fostering broader community engagement (Allen & Farber, 2020).:</p>
+        <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+
+            <!-- Digital Payment & Ticketing -->
+            <div class="grid-item">Digital Payment & Ticketing - (eg. UPI-based Transport Payments, Unified Multimodal Ticketing etc.)
+            <img src="https://rates.fm/static/content/thumbs/1034x582/2/86/xmxyy2---c1034x582x50px50p--ccd7c9a6f8cc3a43c7dab95e00018862.jpg" alt="Digital Payment & Ticketing" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="social_digital_payment" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="social_digital_payment" value="2"></div>
+            <div class="grid-item"><input type="radio" name="social_digital_payment" value="3"></div>
+            <div class="grid-item"><input type="radio" name="social_digital_payment" value="4"></div>
+            <div class="grid-item"><input type="radio" name="social_digital_payment" value="5"></div>
+
+            <!-- Main Mile Mobility Solutions -->
+            <div class="grid-item">Main Mile Mobility Solutions - (eg. Ridesharing Platforms, EV Sharing, etc.)
+            <img src="https://etimg.etb2bimg.com/thumb/msid-100536429,imgsize-863957,width-1200,height=765,overlay-etlegal/litigation/relief-for-ride-sharing-platforms-as-delhi-hc-put-stays-on-transport-department-notice.jpg" alt="Main Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="social_main_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="social_main_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="social_main_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="social_main_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="social_main_mile" value="5"></div>
+
+            <!-- Last-mile and Community Solutions -->
+            <div class="grid-item">Last-mile and Community Solutions -(eg. Public Bicycle Sharing Systems, On-demand Auto-rickshaw Services, etc.)
+            <img src="https://cdn.vox-cdn.com/thumbor/6tp8MBJkWzxqrj4JqSxY6kFTB5I=/0x0:4370x3159/1200x0/filters:focal(0x0:4370x3159):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11448733/New_York_1_e1526330843197.jpg" alt="Last Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="social_last_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="social_last_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="social_last_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="social_last_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="social_last_mile" value="5"></div>
+
+            <!-- Accessibility Technologies -->
+            <div class="grid-item">Accessibility Technologies - (eg. Multilingual Transport Apps, Voice-guided Navigation, etc.)
+            <img src="https://cdn.kodytechnolab.com/wp-content/uploads/2021/07/blog-img-size-4-1024x681.jpg" alt="Accessibility Technology" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="social_accessibility" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="social_accessibility" value="2"></div>
+            <div class="grid-item"><input type="radio" name="social_accessibility" value="3"></div>
+            <div class="grid-item"><input type="radio" name="social_accessibility" value="4"></div>
+            <div class="grid-item"><input type="radio" name="social_accessibility" value="5"></div>
+        </div>
+    </div>
+
+        <!-- Question 2 -->
+            <p>Rate the following technologies on their potential to improve Economic Empowerment (1 = Very Low, 5 = Very High).</p>
+        <p>Economic empowerment in terms of the transportation system refers to how transportation infrastructure enhances economic growth, facilitates factor flow, supports industrial upgrading, and expands markets, ultimately contributing to common prosperity by improving accessibility and efficiency in economic activities (Tong et al., 2024).:</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+                
+            <!-- Digital Payment & Ticketing -->
+            <div class="grid-item">Digital Payment & Ticketing - (eg. UPI-based Transport Payments, Unified Multimodal Ticketing etc.)
+            <img src="https://rates.fm/static/content/thumbs/1034x582/2/86/xmxyy2---c1034x582x50px50p--ccd7c9a6f8cc3a43c7dab95e00018862.jpg" alt="Digital Payment & Ticketing" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="economic_digital_payment" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="economic_digital_payment" value="2"></div>
+            <div class="grid-item"><input type="radio" name="economic_digital_payment" value="3"></div>
+            <div class="grid-item"><input type="radio" name="economic_digital_payment" value="4"></div>
+            <div class="grid-item"><input type="radio" name="economic_digital_payment" value="5"></div>
+
+            <!-- Main Mile Mobility Solutions -->
+            <div class="grid-item">Main Mile Mobility Solutions - (eg. Ridesharing Platforms, EV Sharing, etc.)
+            <img src="https://etimg.etb2bimg.com/thumb/msid-100536429,imgsize-863957,width-1200,height=765,overlay-etlegal/litigation/relief-for-ride-sharing-platforms-as-delhi-hc-put-stays-on-transport-department-notice.jpg" alt="Main Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="economic_main_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="economic_main_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="economic_main_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="economic_main_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="economic_main_mile" value="5"></div>
+
+            <!-- Last-mile and Community Solutions -->
+            <div class="grid-item">Last-mile and Community Solutions - (eg. Public Bicycle Sharing Systems, On-demand Auto-rickshaw Services, etc.)
+            <img src="https://cdn.vox-cdn.com/thumbor/6tp8MBJkWzxqrj4JqSxY6kFTB5I=/0x0:4370x3159/1200x0/filters:focal(0x0:4370x3159):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11448733/New_York_1_e1526330843197.jpg" alt="Last Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="economic_last_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="economic_last_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="economic_last_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="economic_last_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="economic_last_mile" value="5"></div>
+
+            <!-- Accessibility Technologies -->
+            <div class="grid-item">Accessibility Technologies - (eg. Multilingual Transport Apps, Voice-guided Navigation, etc.)
+            <img src="https://cdn.kodytechnolab.com/wp-content/uploads/2021/07/blog-img-size-4-1024x681.jpg" alt="Accessibility Technology" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="economic_accessibility" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="economic_accessibility" value="2"></div>
+            <div class="grid-item"><input type="radio" name="economic_accessibility" value="3"></div>
+            <div class="grid-item"><input type="radio" name="economic_accessibility" value="4"></div>
+            <div class="grid-item"><input type="radio" name="economic_accessibility" value="5"></div>
+        </div>
+    </div>
+
+        <!-- Question 3 -->
+            <p>Rate the following technologies on their potential to improve Universal Accessibility (1 = Very Low, 5 = Very High).</p>
+        <p>Universal accessibility in transportation refers to designing facilities and vehicles to accommodate all passengers, including those with special needs, ensuring equitable access and enhancing overall public transport quality. It emphasizes convenience, comfort, and safety for everyone, not just specific groups (Fearnlay et al., 2024).:</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+
+            <!-- Digital Payment & Ticketing -->
+            <div class="grid-item">Digital Payment & Ticketing - (eg. UPI-based Transport Payments, Unified Multimodal Ticketing etc.)
+            <img src="https://rates.fm/static/content/thumbs/1034x582/2/86/xmxyy2---c1034x582x50px50p--ccd7c9a6f8cc3a43c7dab95e00018862.jpg" alt="Digital Payment & Ticketing" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="accesibility_digital_payment" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="accesibility_digital_payment" value="2"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_digital_payment" value="3"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_digital_payment" value="4"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_digital_payment" value="5"></div>
+
+            <!-- Main Mile Mobility Solutions -->
+            <div class="grid-item">Main Mile Mobility Solutions - (eg. Ridesharing Platforms, EV Sharing, etc.)
+            <img src="https://etimg.etb2bimg.com/thumb/msid-100536429,imgsize-863957,width-1200,height=765,overlay-etlegal/litigation/relief-for-ride-sharing-platforms-as-delhi-hc-put-stays-on-transport-department-notice.jpg" alt="Main Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="accesibility_main_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="accesibility_main_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_main_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_main_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_main_mile" value="5"></div>
+
+            <!-- Last-mile and Community Solutions -->
+            <div class="grid-item">Last-mile and Community Solutions - (eg. Public Bicycle Sharing Systems, On-demand Auto-rickshaw Services, etc.)
+            <img src="https://cdn.vox-cdn.com/thumbor/6tp8MBJkWzxqrj4JqSxY6kFTB5I=/0x0:4370x3159/1200x0/filters:focal(0x0:4370x3159):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11448733/New_York_1_e1526330843197.jpg" alt="Last Mile Mobility" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="accesibility_last_mile" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="accesibility_last_mile" value="2"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_last_mile" value="3"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_last_mile" value="4"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_last_mile" value="5"></div>
+
+            <!-- Accessibility Technologies -->
+            <div class="grid-item">Accessibility Technologies - (eg. Multilingual Transport Apps, Voice-guided Navigation, etc.)
+            <img src="https://cdn.kodytechnolab.com/wp-content/uploads/2021/07/blog-img-size-4-1024x681.jpg" alt="Accessibility Technology" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="accesibility_accessibility" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="accesibility_accessibility" value="2"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_accessibility" value="3"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_accessibility" value="4"></div>
+            <div class="grid-item"><input type="radio" name="accesibility_accessibility" value="5"></div><div class="rating-grid">
+            </div>
+        </div>
+        </div>
+
+        <!-- Current Transportation Technologies Section -->
+        <div class="section">
+            <h2>Current Transportation Technologies</h2>
+            </div>
+            <p>Which Digital Payment & Ticketing Technology currently has the most impact on improving transportation quality in India (1 = Low Impactful, 5 = Very Impactful):</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+
+            <!-- UPI-based Transport Payments -->
+            <div class="grid-item">UPI-based Transport Payments
+            <img src="https://paytmblogcdn.paytm.com/wp-content/uploads/2024/07/UPI-International-payment-1.jpg" alt="UPI" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_upi_payment" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_upi_payment" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_upi_payment" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_upi_payment" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_upi_payment" value="5"></div>
+
+            <!-- App based Ticketing Systems -->
+            <div class="grid-item">App based Ticketing Systems
+            <img src="https://multiqos.com/blogs/wp-content/uploads/2022/01/mobile-ticketing-app-the-new-trend-in-smart-travel-transportation.png" alt="App Based Ticketing" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_app_ticketing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_app_ticketing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_app_ticketing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_app_ticketing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_app_ticketing" value="5"></div>
+
+            <!-- Unified Ticketing System -->
+            <div class="grid-item">Unified Ticketing System
+            <img src="https://bl-i.thgim.com/public/incoming/mtobek/article66356144.ece/alternates/FREE_385/UTS.png" alt="UTS" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_unified_ticketing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_unified_ticketing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_unified_ticketing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_unified_ticketing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_unified_ticketing" value="5"></div>
+            
+            <!-- QR Code-based Ticketing -->
+            <div class="grid-item">QR Code-based Ticketing
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/05/09/50ad775fce0a462de5df9efbfc1712ff1683627709422601_original.png" alt="QR" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_qr_ticketing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_qr_ticketing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_qr_ticketing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_qr_ticketing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_qr_ticketing" value="5"></div>
+            
+            <!-- Automatic Ticket Vending Machines -->
+            <div class="grid-item">Automatic Ticket Vending Machines
+            <img src="https://static.toiimg.com/thumb/msid-70452844,width-400,height-225,resizemode-72/70452844.jpg" alt="ATVM" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_vending_machines" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_vending_machines" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_vending_machines" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_vending_machines" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_vending_machines" value="5"></div>
+            
+            <!-- Contactless NFC Payment Systems -->
+            <div class="grid-item">Contactless NFC Payment Systems (e.g., Metro Cards, Smart Cards)
+            <img src="https://paytmblogcdn.paytm.com/wp-content/uploads/2022/03/row246_How-to-Make-Delhi-Metro-Card-Recharge-Online.png" alt="Metro Card" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_nfc_payment" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_nfc_payment" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_nfc_payment" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_nfc_payment" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_nfc_payment" value="5"></div>
+
+            <!-- Pay-as-you-go Digital Wallet Integration -->
+            <div class="grid-item">Pay-as-you-go Digital Wallet Integration (e.g., Paytm, Google Pay)
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-2614470,resizemode-75,msid-112297576/tech/technology/mobile-wallet-transactions-on-slippery-slope-as-upi-rises.jpg" alt="Wallet" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_wallet_integration" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_wallet_integration" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_wallet_integration" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_wallet_integration" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_wallet_integration" value="5"></div><div class="rating-grid">
+            </div>
+        </div>
+    </div>
+
+        <!-- Question 2 -->
+            <p>Which Mobility Solutions currently has the most impact on improving transportation quality in India (1 = Low Impactful, 5 = Very Impactful):</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+
+            <!-- Ridesharing Platforms -->
+            <div class="grid-item">Ridesharing Platforms (e.g., Ola, Uber)
+            <img src="https://akm-img-a-in.tosshub.com/sites/dailyo//resources/202209/uber-and-ola-continue-to-be-giants-in-taxi-ride-apps-even-if-new-competitors-like-indriver-arrive-in-the-scene-photo-dailyo190922065625.jpeg" alt="RideSharing Plat" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_ridesharing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_ridesharing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_ridesharing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_ridesharing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_ridesharing" value="5"></div>
+
+            <!-- Electric Vehicle Sharing -->
+            <div class="grid-item">Electric Vehicle Sharing (e.g., Yulu, Bounce)
+            <img src="https://console.kr-asia.com/wp-content/uploads/2019/08/Yulu-2.jpg" alt="Yulu" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_ev_sharing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_ev_sharing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_ev_sharing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_ev_sharing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_ev_sharing" value="5"></div>
+
+            <!-- Public Bicycle Sharing Systems -->
+            <div class="grid-item">Public Bicycle Sharing Systems (PBS)
+            <img src="https://cdn.vox-cdn.com/thumbor/6tp8MBJkWzxqrj4JqSxY6kFTB5I=/0x0:4370x3159/1200x0/filters:focal(0x0:4370x3159):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11448733/New_York_1_e1526330843197.jpg" alt="PBS" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_bicycle_sharing" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_bicycle_sharing" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_bicycle_sharing" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_bicycle_sharing" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_bicycle_sharing" value="5"></div>
+            
+            <!-- Carpooling Platforms -->
+            <div class="grid-item">Carpooling Platforms (e.g., BlaBlaCar)
+            <img src="https://cdn.blablacar.com/wp-content/uploads/com/2021/04/09085432/FB_IMG_Relaunch_1200x1200_BlaBlaCar_BlaBlaBus.jpg" alt="Blabla" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_carpooling" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_carpooling" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_carpooling" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_carpooling" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_carpooling" value="5"></div>
+
+            <!-- App-based Shuttle Services -->
+            <div class="grid-item">App-based Shuttle Services (e.g., Shuttl, IntrCity)
+            <img src="https://www.crestinfotech.com/wp-content/uploads/2023/04/shuttle-service-app-e1686725431773.png" alt="Shuttl" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_shuttle_services" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_shuttle_services" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_shuttle_services" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_shuttle_services" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_shuttle_services" value="5"></div>
+
+            <!-- On-demand Auto-rickshaw Services -->
+            <div class="grid-item">On-demand Auto-rickshaw Services (e.g., Rapido, Jugnoo)
+            <img src="https://i.ndtvimg.com/i/2016-04/auto-strike_650x400_71460722355.jpg" alt="Auto" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_auto_services" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_auto_services" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_auto_services" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_auto_services" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_auto_services" value="5"></div><div class="rating-grid">
+            </div>
+        </div>
+    </div>
+
+        <!-- Question 3 -->
+            <p>Which Accessibility to Transportation System currently has the most impact on improving transportation quality in India (1 = Low Impactful, 5 = Very Impactful):</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+
+            <!-- GPS Tracking for Public Transport -->
+            <div class="grid-item">GPS Tracking for Public Transport (eg. Chalo Bus, Chartr etc.)
+            <img src="https://chalo.com/assets/images/page-track-bus.png" alt="GPS Tracking" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_gps_tracking" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_gps_tracking" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_gps_tracking" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_gps_tracking" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_gps_tracking" value="5"></div>
+
+            <!-- Multilingual Transport Navigation Apps -->
+            <div class="grid-item">Multilingual Transport Navigation Apps (eg. Google maps)
+            <img src="https://helios-i.mashable.com/imagery/articles/01C4xaxlXCSF21s4BFNvEnB/hero-image.fill.size_1200x1200.v1611616912.png" alt="Language" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_multilingual_apps" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_multilingual_apps" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_multilingual_apps" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_multilingual_apps" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_multilingual_apps" value="5"></div>
+
+            <!-- Voice-guided Navigation for Visually Impaired Users -->
+            <div class="grid-item">Voice-guided Navigation for Visually Impaired Users (eg. Lazarillo)
+            <img src="https://i.ytimg.com/vi/Oef7Q-VcLuE/sddefault.jpg" alt="Voice Guided Navigation" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_voice_navigation" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_voice_navigation" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_voice_navigation" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_voice_navigation" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_voice_navigation" value="5"></div>
+            
+            <!-- Multimodal Integration of Public Transportation System -->
+            <div class="grid-item">Multimodal Integration of Public Transportation System (eg. Chartr, Tummoc, etc.)
+            <img src="https://iudx.org.in/wp-content/uploads/2021/11/WhatsApp-Image-2021-09-28-at-9.19.49-PM-1024x723-1-768x542.jpeg" alt="Multi Modal" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_multimodal_integration" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_multimodal_integration" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_multimodal_integration" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_multimodal_integration" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_multimodal_integration" value="5"></div>
+
+            <!-- Real-time Transport Occupancy Information -->
+            <div class="grid-item">Real-time Transport Occupancy Information (eg. MakemyTrip, Ixigo, etc.)
+            <img src="https://www.cppr.in/wp-content/uploads/2024/09/Real-Time-Data-in-Indian-Transport-2.jpg" alt="Occupancy Info" style="width: 100px; height: 100px;">
+            </div>
+            <div class="grid-item"><input type="radio" name="impact_realtime_info" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="impact_realtime_info" value="2"></div>
+            <div class="grid-item"><input type="radio" name="impact_realtime_info" value="3"></div>
+            <div class="grid-item"><input type="radio" name="impact_realtime_info" value="4"></div>
+            <div class="grid-item"><input type="radio" name="impact_realtime_info" value="5"></div><div class="rating-grid">
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Challenges Section -->
+        <div class="section">
+            <h2>Challenges, Future Transportation Technologies, and Research Priority</h2>
+                    <!-- Question 1 -->
+            <p>What are the primary challenges in implementing transportation technologies in India? Rate the following based on their impact (1 = Very Low, 5 = Very High):</p>
+            <div class="rating-grid">
+            <!-- Headers -->
+            <div class="grid-header">Technology</div>
+            <div class="grid-header">1</div>
+            <div class="grid-header">2</div>
+            <div class="grid-header">3</div>
+            <div class="grid-header">4</div>
+            <div class="grid-header">5</div>
+            
+             <!-- User Behavioral adaptation challenges -->
+            <div class="grid-item">User Behavioral adaptation challenges</div>
+            <div class="grid-item"><input type="radio" name="challenge_behavioral_adaptation" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_behavioral_adaptation" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_behavioral_adaptation" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_behavioral_adaptation" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_behavioral_adaptation" value="5"></div>
+
+            <!-- Lack of digital literacy -->
+            <div class="grid-item">Lack of digital literacy</div>
+            <div class="grid-item"><input type="radio" name="challenge_digital_literacy" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_digital_literacy" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_digital_literacy" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_digital_literacy" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_digital_literacy" value="5"></div>
+
+            <!-- High implementation costs -->
+            <div class="grid-item">High implementation costs</div>
+            <div class="grid-item"><input type="radio" name="challenge_implementation_costs" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_implementation_costs" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_implementation_costs" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_implementation_costs" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_implementation_costs" value="5"></div>
+
+            <!-- Coordination issues between stakeholders -->
+            <div class="grid-item">Coordination issues between stakeholders</div>
+            <div class="grid-item"><input type="radio" name="challenge_coordination_issues" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_coordination_issues" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_coordination_issues" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_coordination_issues" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_coordination_issues" value="5"></div>
+            
+            <!-- Limited internet and smartphone penetration -->
+            <div class="grid-item">Limited internet and smartphone penetration</div>
+            <div class="grid-item"><input type="radio" name="challenge_internet_penetration" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_internet_penetration" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_internet_penetration" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_internet_penetration" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_internet_penetration" value="5"></div>
+            
+            <!-- Resistance from traditional transport operators -->
+            <div class="grid-item">Resistance from traditional transport operators</div>
+            <div class="grid-item"><input type="radio" name="challenge_resistance_operators" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_resistance_operators" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_resistance_operators" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_resistance_operators" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_resistance_operators" value="5"></div>
+                        
+            <!-- Socio-Income disparities affecting affordability -->
+            <div class="grid-item">Socio-Income disparities affecting affordability</div>
+            <div class="grid-item"><input type="radio" name="challenge_income_disparities" value="1" required></div>
+            <div class="grid-item"><input type="radio" name="challenge_income_disparities" value="2"></div>
+            <div class="grid-item"><input type="radio" name="challenge_income_disparities" value="3"></div>
+            <div class="grid-item"><input type="radio" name="challenge_income_disparities" value="4"></div>
+            <div class="grid-item"><input type="radio" name="challenge_income_disparities" value="5"></div><div class="rating-grid">
+            </div>
+        </div>
+    </div>
+
+        <!-- Ranking Future Technologies -->
+        <div class="section">
+            <h2>Rank Future Transportation Technologies</h2>
+            <p>Rank the following technologies from 1 (most important) to 8 (least important):</p>
+            <div class="section">
+        <form id="rankingForm">
+            <div class="tech-label">
+                <label>AI-driven Traffic Management Systems:
+                <img src="https://insights.blackcoffer.com/wp-content/uploads/2021/08/t10.jpg" alt="AI Tech" style="width: 100px; height: 100px;">
+                    <select id="rank_tech1" name="rank_tech1" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Autonomous Public Transport:
+                <img src="https://www.robustel.com/wp-content/uploads/2023/06/Autonomous-Shuttle-Bus-Networking-Solution-header.jpg" alt="APT" style="width: 100px; height: 100px;">
+                    <select id="rank_tech2" name="rank_tech2" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Pod Taxis (PRT):
+                <img src="https://ddnews.gov.in/wp-content/uploads/2024/03/tulika20bishnoi2028229.png" alt="POD" style="width: 100px; height: 100px;">
+                    <select id="rank_tech3" name="rank_tech3" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Low-emission Hydrogen Fuel Cell Vehicles:
+                <img src="https://thecityfix.com/wp-content/uploads/2020/08/23105298994_8a9c6b5487_k-640.jpg" alt="Hydrogen" style="width: 100px; height: 100px;">
+                    <select id="rank_tech4" name="rank_tech4" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Water Metro Projects:
+                <img src="https://img.staticmb.com/mbcontent/images/crop/uploads/2024/11/kochi-water-metro_0_1200.jpg" alt="Water Metro" style="width: 100px; height: 100px;">
+                    <select id="rank_tech5" name="rank_tech5" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Metro Neo Projects:
+                <img src="https://img.jagranjosh.com/images/2021/February/422021/Metro-Neo-Project-nashik.jpg" alt="Metro Neo" style="width: 100px; height: 100px;">
+                    <select id="rank_tech6" name="rank_tech6" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Urban Air Mobility (UAM):
+                <img src="https://www.technology-innovators.com/wp-content/uploads/2024/04/Urban-Air-Mobility-UAM-Solutions-The-Future-of-Transportation-min.jpg" alt="UAM" style="width: 100px; height: 100px;">
+                    <select id="rank_tech7" name="rank_tech7" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+            <div class="tech-label">
+                <label>Regional Rapid Transit System (RRTS):
+                <img src="https://i.ytimg.com/vi/VoOFI1NG-q4/sddefault.jpg" alt="RRTS" style="width: 100px; height: 100px;">
+                    <select id="rank_tech8" name="rank_tech8" class="rank-select" required>
+                        <option value="">Select Rank</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+            </div>
+        <form id="surveyForm" action="http://localhost:3000/submit" method="POST">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selects = document.querySelectorAll('.rank-select');
+
+            selects.forEach(select => {
+                select.addEventListener('change', function () {
+                    updateDropdowns();
+                });
+            });
+
+            function updateDropdowns() {
+                const selectedValues = Array.from(selects).map(select => select.value).filter(val => val);
+
+                selects.forEach(select => {
+                    const currentValue = select.value;
+                    select.innerHTML = '<option value="">Select</option>';
+                    
+                    for (let i = 1; i <= 8; i++) {
+                        if (!selectedValues.includes(i.toString()) || i.toString() === currentValue) {
+                            select.innerHTML += `<option value="${i}">${i}</option>`;
+                        }
+                    }
+
+                    select.value = currentValue;
+                });
+            }
+        });
+    </script>
+
+
+
+              <button type="submit">Submit</button>
+        <div id="errorMessages" class="error-message"></div>
+    </form>
+
+    <div id="follow-up" class="follow-up"></div>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const rankings = [
+                { tech: 'AI-driven Traffic Management Systems', rank: document.getElementById('rank_tech1').value },
+                { tech: 'Autonomous Public Transport', rank: document.getElementById('rank_tech2').value },
+                { tech: 'Pod Taxis (PRT)', rank: document.getElementById('rank_tech3').value },
+                { tech: 'Low-emission Hydrogen Fuel Cell Vehicles', rank: document.getElementById('rank_tech4').value },
+                { tech: 'Water Metro Projects', rank: document.getElementById('rank_tech5').value },
+                { tech: 'Metro Neo Projects', rank: document.getElementById('rank_tech6').value },
+                { tech: 'Urban Air Mobility (UAM)', rank: document.getElementById('rank_tech7').value },
+                { tech: 'Regional Rapid Transit System (RRTS)', rank: document.getElementById('rank_tech8').value }
+            ];
+
+            rankings.sort((a, b) => a.rank - b.rank);
+            const topRanked = rankings.slice(0, 3);
+
+            const followUpDiv = document.getElementById('follow-up');
+            followUpDiv.innerHTML = '<h3>Follow-up Questions</h3>';
+            topRanked.forEach((item, index) => {
+                followUpDiv.innerHTML += `
+                    <p>Rate the Social Inclusivity impact of ${item.tech} (1 = Very Low, 5 = Very High):</p>
+                    <select id="followUp_social_${index}" name="followUp_social_${index}" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p>Rate the Economic Empowerment impact of ${item.tech} (1 = Very Low, 5 = Very High):</p>
+                    <select id="followUp_economic_${index}" name="followUp_economic_${index}" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <p>Rate the Universal Accessibility impact of ${item.tech} (1 = Very Low, 5 = Very High):</p>
+                    <select id="followUp_accessibility_${index}" name="followUp_accessibility_${index}" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                `;
+            });
+
+            followUpDiv.innerHTML += '<button onclick="submitFollowUp()">Submit Follow-Up</button>';
+        });
+
+        function submitFollowUp() {
+            const followUpRatings = [];
+            document.querySelectorAll('[id^=followUp_]').forEach((select) => {
+                followUpRatings.push(select.value);
+            });
+
+            if (followUpRatings.includes('')) {
+                alert('Please complete all follow-up questions.');
+                return;
+            }
+
+            alert('Thank you for your responses!');
+        }
+    </script>
+</body>
+
+</html>
